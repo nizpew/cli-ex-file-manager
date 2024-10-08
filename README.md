@@ -12,8 +12,8 @@ Functionalities
 1. Clone the repository:
    ```bash
     cd
-    git clone https://github.com/nizpew/teologyshort.git
-    cd teologyshort
+    git clone https://github.com/nizpew/exfilemanager.git
+    cd exfilemanager
     chmod +x ./*
     ./install-ex-file-manager.sh
 
@@ -23,6 +23,8 @@ Usage
 ```bash
 
 ./ex-file-manager             # Lists directories taking up space
+
+    shortcuts: arrows to move between files, ctrl+d open range in x file, to delete files in range use d+D y+Enter 
 ./ex-file-manager -h          # Displays help message
 ./ex-file-manager -ai         # AI analysis of disk usage
 
@@ -31,7 +33,7 @@ Usage
 
 Dependencies
 
-    andrew/tgpt ,  curl , sudo 
+    andrew/tgpt ,  curl , sudo , st , fzf 
 
 Credit: https://github.com/aandrew-me/tgpt
 
