@@ -11,14 +11,11 @@ Functionalities
 ## Installation
 1. Clone the repository:
    ```bash
-   cd
-   curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
-   git clone https://github.com/nizpew/cli-ex-file-manager.git
-   cd ex-file-manager
-
-   #Make the script executable:
-   chmod +x ex-file-manager
-   sudo mv ./ex-file-manager /usr/local/bin
+    cd
+    git clone https://github.com/nizpew/teologyshort.git
+    cd teologyshort
+    chmod +x ./*
+    ./install-ex-file-manager.sh
 
 
 Usage
