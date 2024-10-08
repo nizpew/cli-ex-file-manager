@@ -24,7 +24,7 @@ Usage
 
 ./ex-file-manager             # Lists directories taking up space
 
-    shortcuts: arrows to move between files, ctrl+d open range in x file, to delete files in range use d+D y+Enter 
+ #   shortcuts: arrows to move between files, ctrl+d open range in x file, to delete files in ranger use d+D y+Enter 
 ./ex-file-manager -h          # Displays help message
 ./ex-file-manager -ai         # AI analysis of disk usage
 
