@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Execute the command ex-file-manager and store the output
+output=$(/home/$USER/exfilemanager/ex-file-manager -s $1 2>/dev/null)
+
+# Process the output
+echo "$output" | awk '{
+    if ($1 ~ /G/) {print $0 > "gigabytes.txt"}
+    else if ($1 ~ /M/) {print $0 > "megabytes.txt"}
+}'
+
+# Sort and print results in descending order
+{
+    echo "Gigabytes:"
+    sort -hr gigabytes.txt  # -r for reverse (descending order)
+    echo
+    echo "Megabytes:"
+    sort -hr megabytes.txt  # -r for reverse (descending order)
+} | column -t
+
+# Cleanup
+rm gigabytes.txt megabytes.txt
+

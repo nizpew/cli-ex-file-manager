@@ -1,0 +1,22 @@
+#!/bin/bash
+
+while true; do
+    # Get disk usage information for the current directory
+    output=$(/home/$USER/exfilemanager/make-output-crescen "$1")
+
+    # Use fzf to select an entry with a custom bind for 'd'
+    selected=$(echo "$output" | fzf --height 40% --reverse --border --bind 'ctrl-d:execute(~/openranger {} )')
+
+    # If the user presses Esc or no selection was made, exit the script
+    if [ -z "$selected" ]; then
+        echo "Exiting..."
+        exit 0
+    fi
+
+    # If something was selected, process it
+    echo "Entering directory: $selected"
+
+    # Update the first argument to the selected directory
+    set -- "$selected"
+done
+

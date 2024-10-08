@@ -1,0 +1,14 @@
+#!/bin/bash
+#$(echo $@ | awk '{print $2}')
+
+
+
+
+st ranger "${@:2}" 2> /dev/null
+#exec bash
+#exit
+
+
+
+
+
