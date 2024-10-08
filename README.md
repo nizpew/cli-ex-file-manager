@@ -6,7 +6,7 @@ A script to help you find what's taking up disk space on your Linux machine, wit
 Functionalities
 
     List directories and their sizes.
-    AI assistance to identify large folders.
+    AI assistance to identify large folders. (susceptible to errors)
 
 ## Installation
 1. Clone the repository:
