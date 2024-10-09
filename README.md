@@ -33,7 +33,7 @@ Usage
 
 Dependencies
 
-    andrew/tgpt ,  curl , sudo , st , fzf 
+    andrew/tgpt ,  curl , sudo , stterm , fzf 
 
 Credit: https://github.com/aandrew-me/tgpt
 
