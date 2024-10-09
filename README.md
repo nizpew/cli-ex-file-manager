@@ -16,7 +16,7 @@ Functionalities
     cd exfilemanager
     chmod +x ./*
     ./install-ex-file-manager.sh
-   chmod +x /usr/local/bin/exfilemanager
+   sudo chmod +x /usr/local/bin/exfilemanager
    cd ; exfilemanager
 
 
