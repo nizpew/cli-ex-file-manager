@@ -16,6 +16,7 @@ Functionalities
     cd exfilemanager
     chmod +x ./*
     ./install-ex-file-manager.sh
+   cd ; exfilemanager
 
 
 Usage
