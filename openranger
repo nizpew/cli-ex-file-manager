@@ -4,7 +4,7 @@
 
 
 
-st ranger "${@:2}" 2> /dev/null
+stterm ranger "${@:2}" 2> /dev/null
 #exec bash
 #exit
 
