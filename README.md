@@ -7,6 +7,8 @@ Functionalities
 
     List directories and their sizes.
     AI assistance to identify large folders. (susceptible to errors)
+    
+    #shortcuts: arrows to move between files, ctrl+d open range in indicated file, to delete files in ranger use d+D y+Enter 
 
 ## Installation
 1. Clone the repository:
@@ -17,18 +19,19 @@ Functionalities
     chmod +x ./*
     ./install-ex-file-manager.sh
    sudo chmod +x /usr/local/bin/exfilemanagercli
-   cd ; exfilemanager
+   cd
+   exfilemanagercli
 
 
 Usage
 
 ```bash
 
-./ex-file-manager             # Lists directories taking up space
+./exfilemanagercli             # Lists directories taking up space
 
- #   shortcuts: arrows to move between files, ctrl+d open range in x file, to delete files in ranger use d+D y+Enter 
-./ex-file-manager -h          # Displays help message
-./ex-file-manager -ai         # AI analysis of disk usage
+ #   shortcuts: arrows to move between files, ctrl+d open range in indicated file, to delete files in ranger use d+D y+Enter 
+./exfilemanagercli -h          # Displays help message
+./exfilemanagercli -ai         # AI analysis of disk usage ; as AI prone to ERROR 
 
 ```
 
@@ -40,8 +43,8 @@ Dependencies
 Credit: https://github.com/aandrew-me/tgpt
 
 To-Do
-
-Add a 'lobster'-like Dmenu file manager for navigating folders and deleting files (in-ex-explorer). I will probably make an integration with [ranger] or something.
-
+    improve file flowing in fzf
+    improve ranger implementatio
+    improve security
     Implement error handling for sudo permissions.
 
