@@ -43,6 +43,8 @@ Dependencies
 Credit: https://github.com/aandrew-me/tgpt
 
 To-Do
+
+    fix -h
     improve file flowing in fzf
     improve ranger implementatio
     improve security
